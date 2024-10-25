@@ -75,7 +75,7 @@
 
     <script>
         const chatBox = document.getElementById('chat-box');
-        const ws = new WebSocket("ws://localhost:8000/ws");
+        const ws = new WebSocket("wss://chatbot-test-5tw4.onrender.com/ws");  // Cambia <tu-dominio-en-render> por el dominio correcto de Render
 
         ws.onmessage = function(event) {
             const botMessage = document.createElement('div');
